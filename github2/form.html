@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>validation</title>
+	<script type="text/javascript">
+     function validation()
+     {
+        var name = document.forms["regform"]["name"];
+        var email = document.forms["regform"]["email"];
+        var mobilenumber = document.forms["regform"]["mobilenumber"];
+        var what = document.forms["regform"]["subject"];
+        if (name.value =="")
+        {
+            window.alert("please enter your name.");
+            return false;
+        }
+        if (email.value == "")
+        {
+            window.alert("please enter your email");
+        }
+        if (mobilenumber.value == "")
+        {
+            window.alert("please enter your mobile number");
+        }
+        if (emailvalue,indexof("@", 0) < 0)
+        {
+            window.alert("please enter a valid emmail adress.")
+            return false;
+        }
+     }   
+    </script>
+</head>
+<body>
+   
+   
+        <form name="regform" onsubmit="return validation()" method="post">
+        <center>
+        <h1 style="color: blue;font-size: 30px">REGISTRATION FORM</h1>
+        <p>SELECT YOUR CHOICE</p>
+        <select value="" name="subject">
+        <OPTION>BTECH</OPTION>
+        <OPTION>BARC</OPTION>
+        <OPTION>BBA</OPTION>
+        <OPTION>B.COM</OPTION> your name"><br>
+        </select>
+        <h3>name</h3>
+        <input type="text" name="name" ><br>
+        <h3>email</h3>
+		<input type="text" name="email" ><br>
+	    <h3>mobile number</h3>
+        <input type="text" name="mobilenumber" ><br>
+         <p><input type="submit" value="send" name="submit"></p>
+         </center>
+		</form>
+    
+
+
+</body>
+</html>
+		
